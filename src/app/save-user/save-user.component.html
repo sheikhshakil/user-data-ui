@@ -1,0 +1,52 @@
+<section>
+  <div class="container">
+    <div class="col-md-9 mx-auto">
+      <div class="my-card border-red">
+        <div class="light-bg-red p-3">
+          <h6>Save user information</h6>
+        </div>
+        <div class="p-3">
+          <form (submit)="saveUserInfo()" >
+            <div class="mb-2">
+              <input
+                type="email"
+                [formControl]="email"
+                class="form-control"
+                placeholder="Email address"
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                type="text"
+                [formControl]="fullName"
+                class="form-control"
+                placeholder="Full name"
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                type="text"
+                [formControl]="address"
+                class="form-control"
+                placeholder="Address"
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                type="text"
+                [formControl]="phone"
+                class="form-control"
+                placeholder="Phone"
+              />
+            </div>
+            <div class="text-center mt-3">
+              <button type="submit" class="btn btn-danger">
+                Save information
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
